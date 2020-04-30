@@ -2119,7 +2119,7 @@ EasyMDE.prototype.uploadImage = function (file, onSuccess, onError) {
 
     // insert CSRF token if provided in config.
     if (self.options.imageCSRFToken) {
-        formData.append("authenticity_token", self.options.imageCSRFToken);
+        formData.append('authenticity_token', self.options.imageCSRFToken);
     }
     var request = new XMLHttpRequest();
     request.upload.onprogress = function (event) {
